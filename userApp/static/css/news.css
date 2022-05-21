@@ -1,0 +1,61 @@
+
+.position {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 40px;
+    font-size: 16px;
+    height:40px;
+}
+
+.position img {
+    vertical-align:text-bottom;
+}
+.position div div div a {
+    color:#fff;
+}
+
+.xinwen_li a:after {
+    content: "";
+    display: inline-block;
+    float: right;
+    height:16px;
+    border-right: 1px solid #4a4747;
+       top: 38px;
+    left: 250px;
+    position: absolute;
+}
+
+.xinwei_a {
+
+        background-color:#fff;
+        padding: 15px;
+     }
+a:hover .xinwei_a  {
+           background-color:#233160;
+           color:#fff;
+    }
+
+.xw_d {
+    width:360px;height:225px;
+    overflow: hidden;
+}
+
+.xw_a div img{
+    width:360px;height:225px;
+}
+
+.xw_d .xw_a{
+  transition: all 0.6s;
+  width:360px;height:225px;
+}
+a:hover .xw_d .xw_a{
+  transform: scale(1.4);
+}
+
+li:hover a div,.xinwei_a:hover div h4,.xinwei_a:hover span {
+    color:#fff;
+}
+

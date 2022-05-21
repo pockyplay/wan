@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{name}}-浙江椿树整流器有限公司</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/headfoot.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cpxq.css' %}">
+
+</head>
+<body >
+<!--导航栏 顶部-->
+<nav class="navbar navbar-default text-center navbar-fixed-top" id="navbar_top" role="navigation">
+	<div class="container" style="padding-left: 0px;padding-right: 0px;padding-top: 0px">
+	<div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+        <img class="navbar-brand" src="{% static 'img/wzlogo.png' %}" style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;">
+	</div>
+
+	<div class="collapse navbar-collapse " id="example-navbar-collapse"  style="margin-top: 0px;">
+
+
+
+
+
+
+
+		<ul class="nav navbar-nav  navbar-right" style="font-size:16px">
+			<li ><a class="nav_fh" href="/index">网站首页</a></li>
+            <li  ><a  class="dropdown nav_fh dropdown-toggle" href="#"  data-toggle="dropdown">公司概况</a>
+            <ul class="dropdown-menu  dropdown-menu-1"  >
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/gsjj">公司简介</a></li>
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/gszs">资质荣誉</a></li>
+            </ul>
+
+
+            </li>
+			<li  ><a  class="dropdown nav_fh dropdown-toggle" href="#"  data-toggle="dropdown">产品中心</a>
+            <ul class="dropdown-menu  dropdown-menu-1"  >
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/cpzx?id=mokuai">模块系列</a>
+<!--                    <ul class="dropdown-menu">-->
+<!--                        <li><a tabindex="-1" href="#">整流模块</a></li>-->
+<!--                        <li><a tabindex="-1" href="#">可控硅模块</a></li>-->
+<!--                    </ul>-->
+
+                </li>
+
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/cpzx?id=gtjdq">固态继电器系列</a></li>
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/cpzx?id=gyjgtjdq">工业级固态系列</a></li>
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/cpzx?id=luoxuan">螺旋系列</a></li>
+
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/cpzx?id=pingban">平板系列</a></li>
+
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/cpzx?id=zlq">整流桥系列</a></li>
+
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/cpzx?id=srq">散热器系列</a></li>
+
+                <li class="dropdown-submenu" ><a tabindex="-1" href="/cpzx?id=cpfj">产品附件</a></li>
+
+            </ul>
+
+
+            </li>
+            <li ><a class="nav_fh" href="#" title="企业微信" id="nav_top_js"
+			data-container="body" data-toggle="popover" data-placement="bottom"  data-trigger="hover"
+            >技术支持</a></li>
+			<li ><a  class="nav_fh" href="/news">新闻资讯</a></li>
+			<li ><a class="nav_fh"  href="/lxwm">联系我们</a></li>
+            <li class="for_li">
+                <form  action="/czsearch/" method="get" class="navbar-form" role="form" style="padding-right: 0px;padding-left: 0px; margin-left:15px;">
+                    {% csrf_token %}
+        <div class="row">
+            <div style="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="text">
+                    <span class="input-group-btn ">
+                        <button style="outline: none;" type="submit" class="btn btn-default" >搜索</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </form>
+
+
+            </li>
+		</ul>
+	</div>
+	</div>
+</nav>
+
+<!--location-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 head_div">
+            <img src="{% static 'img/banner_bg.jpg' %}">
+        </div>
+        <div class="col-md-12">
+            <div class="position">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" style="color:#fff;">
+                             <img  src="{% static 'img/weizi.png'%}">
+                             当前位置：
+                            <a href="/index">首页 </a>>>
+                            <a href="/cpzx?id={{sj}}">产品中心</a>>>
+                            <a href="/cpxq?id={{name}}">{{name}}</a>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xs-12 col_div">
+            <img id="title_img" src="../static/img/{{abs}}/{{dir}}/t_1.jpg">
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-10 col-xs-12">
+                 <h3><a>{{name}}</a><small>【执行标准：GB/T14048.5-2017】</small></h3>
+                </div>
+            <div class="col-md-2  text-right" style="line-height:70px;">
+                     <span class="label label-success">正品保障</span>
+                </div>
+             <div class="col-md-12 col-xs-12">
+                 <hr>
+             </div>
+            <div class="col-md-12 col-xs-12 ">
+             <h5>特点：</h5>
+                <ul>
+                    <li><h6>生产车间万级无尘车间</h6></li>
+                    <li><h6>引进德国先进的设备“真空+氢气”保护焊接技术</h6></li>
+                    <li><h6>全自动抽真空硅凝胶和环氧双吐机灌胶</h6></li>
+                    <li><h6>采用进口方形芯片，美国仙童MOC3083光耦，金属膜电阻，CBB阻容吸收</h6></li>
+                    <li><h6>芯片与底板电气绝缘交流电压2500VAC</h6></li>
+                </ul>
+             </div>
+            <div class="col-md-12 text-center col-xs-12">
+                <br>
+                <br>
+                <a   class="btn btn-primary "  target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1289551247&site=qq&menu=yes" >立刻咨询</a>
+               <a  class="btn btn-primary " href="/lxwm" >联系我们</a>
+               <a   class="btn btn-primary " target="_blank"  href="../static/img/{{abs}}/{{dir}}/{{dir}}.pdf" >资料下载</a>
+                  <br>
+                  <br>
+                  <br>
+
+                <ul class="list-unstyled small_ul list-inline">
+                    <li><a ><img class="li_m" id="li_img_1" src="../static/img/{{abs}}/{{dir}}/t_1.jpg"></a></li>
+                    <li><a ><img class="li_m" id="li_img_2" src="../static/img/{{abs}}/{{dir}}/t_2.jpg"></a></li>
+                    <li><a ><img class="li_m" id="li_img_3" src="../static/img/{{abs}}/{{dir}}/t_3.jpg"></a></li>
+                    <li><a ><img class="li_m" id="li_img_4" src="../static/img/{{abs}}/{{dir}}/t_4.jpg"></a></li>
+                </ul>
+             </div>
+
+       </div>
+        <div class="col-md-12 col-xs-12" >
+              <hr>
+              <br>
+              <h2>规格型号<small>(电流选型)</small></h2>
+              <br>
+              <ul class="list-unstyled small_ul_w list-inline text-left">
+                  {% for ite in list %}
+                    <li class="text-center"><a href="?id={{ite.name}}">{{ite.name}}</a></li>
+
+                 {% endfor %}
+                </ul>
+          </div>
+</div>
+</div>
+<div class="container-fluid">
+    <div class="row text-center">
+<!--        尺寸图-->
+        <div class="col-md-12 col-xs-12 col_div " STYLE="background:#f9f9f9;margin-top:50px; padding-bottom: 50px;">
+         <H3><strong>尺寸图</strong></H3>
+            <br>
+            <div>
+                <img src="../static/img/{{abs}}/{{dir}}/cct.jpg">
+            </div>
+        </div>
+<!--        电流公司-->
+        <div class="col-md-12 col-xs-12 col_div" STYLE="background:#f9f9f9;margin-top:50px; padding-bottom: 50px;">
+         <H3><strong>电流计算公式</strong></H3>
+                <br>
+            <div>
+                <img src="../static/img/{{abs}}/{{dir}}/dianliu.jpg">
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 col_div" STYLE="margin-top:50px;padding-bottom: 50px;">
+        <H3><strong>产品检测视频</strong></H3>
+            <br>
+            <iframe src="http:////player.bilibili.com/player.html?aid=927940107&amp;bvid=BV1iK4y1f7uQ&amp;cid=261915982&amp;page=7" width="800" height="600" scrolling="no" frameborder="0" align=""></iframe>
+        </div>
+
+        <div class="col-md-12 col-xs-12 col_div" STYLE="background:#f9f9f9;margin-top:50px;padding-bottom: 50px;">
+        <H3><strong>产品接线图</strong></H3>
+            <br>
+            <div>
+                    <img src="../static/img/{{abs}}/{{dir}}/jxt.jpg">
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 col_div" STYLE="margin-top:50px;padding-bottom: 50px;">
+        <h3><strong>散热器</strong><small>（产品使用二分钟以上必须需装配散热器。点击查看可尺寸图片可拖动查看）</small></h3>
+            <br>
+            <ul class="list-unstyled  sanre_ul list-inline">
+                {% for ite in sanre %}
+                    <li><a href="{{ite.url}}"><img src="../static/img/{{abs}}/{{dir}}/{{ite.img}}"></a></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="col-md-12 col-xs-12 col_div" STYLE="background:#f9f9f9;margin-top:50px;padding-bottom: 50px;">
+        <h3><strong>技术参数</strong><small>（以实际为准）</small></h3>
+            <br>
+            <div>
+                <img src="../static/img/{{abs}}/{{dir}}/canshu.jpg">
+            </div>
+        </div>
+
+        <div class="col-md-12 col-xs-12 col_div" STYLE="margin-top:50px;padding-bottom: 50px;">
+        <h3><strong>波形图</strong><small>（以实际为准）</small></h3>
+            <br>
+            <div>
+                <img src="../static/img/{{abs}}/{{dir}}/botu.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br><br>
+
+
+
+<!--底部导航条1 -->
+<div class="container-fluid db_nav" style="background:#f6f6f6;">
+	<div class="row" style="padding-left: 0px;padding-right: 0px;">
+		<div class="container" style="padding-left: 0px;padding-right: 0px;">
+			<div class="row" style="padding-top: 30px;">
+				<div class="col-md-6 footer_lf">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="footer_title">
+									<a href="/gsjj" ><strong>公司简介</strong></a>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="footer_title">
+									<a href="/cpzx?id=mokuai" ><strong>产品中心</strong></a>
+								</div>
+								<br>
+								<div class="footer_name">
+									<a  href="/cpzx?id=gtjdq" class="text-muted">固态继电器系列</a>
+								</div>
+								<div  class="footer_name">
+									<a href="/cpzx?id=luoxuan" class="text-muted">螺旋系列</a>
+								</div>
+								<div class="footer_name">
+									<a href="/cpzx?id=pingban" class="text-muted">平板系列</a>
+								</div>
+								<div class="footer_name">
+									<a  href="/cpzx?id=zlq" class="text-muted ">整流桥系列</a>
+								</div>
+								<div class="footer_name">
+									<a  href="/cpzx?id=srq" class="text-muted">散热器系列</a>
+								</div>
+
+							</div>
+							<div class="col-md-3 ">
+								<div class="footer_title">
+									<a href="#" ><strong>资格证书</strong></a>
+								</div>
+																<br>
+								<div class="footer_name">
+									<a  href="/cpzx?id=cpfj" class="text-muted">产品附件</a>
+								</div>
+<!--								<div  class="footer_name">-->
+<!--									<a href="#" class="text-muted">固态继电器系列</a>-->
+<!--								</div>-->
+<!--								<div class="footer_name">-->
+<!--									<a href="#" class="text-muted">固态继电器系列</a>-->
+<!--								</div>-->
+<!--								<div class="footer_name">-->
+<!--									<a  href="#" class="text-muted ">固态继电器系列</a>-->
+<!--								</div>-->
+<!--								<div class="footer_name">-->
+<!--									<a  href="#" class="text-muted">固态继电器系列</a>-->
+<!--								</div>-->
+							</div>
+
+							<div class="col-md-3">
+								<div class="footer_title">
+									<a href="/news" ><strong>公司动态</strong></a>
+								</div>
+							</div>
+						</div>
+				</div>
+			<div class="col-md-5" style="padding-top:0px;padding-left: 20px;padding-right: 0px;">
+					<div class="row">
+                        <div class="col-md-5 text-center" >
+<!--                            微信二维码-->
+                            <img src="{% static 'img/vx_qy.png'%}"/>
+                            <p class="lead" style="font-size:18px;"><a class="text-muted">扫码关注企业微信</a></p>
+                        </div>
+
+                        <div class="col-md-7">
+                           <p class="lead"><strong>全国销售热线：</strong></p>
+                           <p class="lead">4008-267-221</p>
+                           <p class="lead">地址：乐清市柳市镇排岩头工业区柳黄路1178号椿树大厦</p>
+
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="container-fluid text-center ba_div" style="background-color:#484848">
+
+            <a href="#" style="color:#fff">
+                Copyright© 2014 版权所有：浙江椿树整流器有限公司 备案号：沪ICP备05035961号-1
+            </a>
+
+</div>
+
+
+
+
+<!--右侧导航栏-->
+<div class=" right_nav text-center "  style="width:50px;">
+    <ul class="nav nav-tabs  nav-stacked">
+    <li style="">
+            <a id="right_weixin_qiye"   data-trigger="hover"
+                data-container="body" data-toggle="popover" data-placement="left" style="width:50px;height:40px;
+                 background: url({% static 'img/wachatgreen.png'%})no-repeat center #1861ae;">
+<!--                企业微信-->
+
+            </a>
+            <div>公众号</div>
+        </li>
+    <li style="">
+        <a  id="right_qq"   data-trigger="hover"
+                data-container="body" data-toggle="popover" data-placement="left" data-content="NULL" style="width:50px;height:40px;
+                 background: url({% static 'img/qqblue.png'%})no-repeat center #1861ae;">
+            </a>
+        <div>企业QQ</div>
+    </li>
+    <li style="">
+        <!--       销售微信     -->
+                <a  id="right_weixin_xiaoshou"   data-trigger="hover"
+                data-container="body" data-toggle="popover" data-placement="left" style="width:50px;height:40px;
+                 background: url({% static 'img/wachatgreen.png'%})no-repeat center #1861ae ;"></a>
+                <div>销售微信</div>
+    </li>
+    <li style="">
+                <!--       销技术     -->
+        <a  id="right_weixin_jishu"   data-trigger="hover"
+            data-container="body" data-toggle="popover" data-placement="left" style="width:50px;height:40px;
+                 background: url({% static 'img/wachatgreen.png'%})no-repeat center #1861ae;">
+        </a>
+        <div>企业微信</div>
+    </li>
+    <li><a href="#" onclick="topFunction()"  style="width:50px;height:40px;
+                 background:url({% static 'img/gotop.png'%})#1861ae;">
+    </a>
+        <div>返回顶部</div>
+    </li>
+</ul>
+
+</div>
+
+
+
+<!--底部导航条2 -->
+<nav class=" container-fluid  db_nav navbar navbar-default text-center navbar-fixed-bottom" role="navigation" id="navbar_bottom">
+	<div class="container text-center" style="padding-left: 0px;padding-right: 0px;">
+        <div class="row">
+<!--            底部电话-->
+            <div class="col-md-4 col-md-offset-2 footer_bar_lf " style=" line-height: 100px;">
+                <div class="row" >
+                     <div class="col-md-1 col-md-offset-2">
+                         <img src="{% static 'img/b-tel.png'%}">
+                     </div>
+                     <div class="col-md-6 col-md-offset-1" >
+                         <div class="row">
+                             <div class="col-md-12" style=" line-height: 65px;" >
+                             <a class="b_bar_font">电话:4008-267-221</a>
+                                 </div>
+                        <div class="row">
+                             <div class="col-md-12 " style=" line-height: 0px;">
+                             <a class="b_bar_font">电话:4008-267-221</a>
+                         </div>
+
+
+                     </div>
+                </div>
+</div>
+            </div>
+        </div>
+            <!--            邮件传真-->
+
+            <!--            底部地址-->
+            <div class="col-md-4 " style=" line-height: 100px;">
+                <div class="row" >
+                     <div class="col-md-1 col-md-offset-2">
+                         <img src="{% static 'img/b-add.png'%}">
+                     </div>
+                     <div class="col-md-6 col-md-offset-1" >
+                         <div class="row">
+                             <div class="col-md-12" style=" line-height: 65px;" >
+                             <a class="b_bar_font">浙江乐清柳市排岩头</a>
+                                 </div>
+                        <div class="row">
+                             <div class="col-md-12 " style=" line-height: 0px;">
+                             <a class="b_bar_font">柳黄路1178号椿树大厦</a>
+                         </div>
+
+
+                     </div>
+                </div>
+</div>
+            </div>
+        </div>
+
+
+	</div>
+	</div>
+
+</nav>
+<!--手机底部导航栏-->
+<div class="container-fluid text-center ba_div_2 navbar-fixed-bottom " style="background:#337ab7">
+    <div class="row xs_row">
+        <div class="col-xs-2" style="margin-left: 33px;">
+            <a href="/index">
+                <img src="{% static 'img/home.png'%}">
+                <h6>首页</h6>
+            </a>
+
+        </div>
+        <div class="col-xs-2">
+            <a href="/gszs">
+                <img src="{% static 'img/zizhi.png'%}">
+                <h6>资质</h6>
+            </a></div>
+        <div class="col-xs-2">
+            <a href="/cpzx?id=gtjdq">
+                <img src="{% static 'img/cpzx.png'%}">
+                <h6>产品</h6>
+            </a></div>
+        <div class="col-xs-2">
+            <a href="/lxwm">
+                <img src="{% static 'img/foot1_wx.png'%}">
+                <h6>技术</h6>
+            </a></div>
+        <div class="col-xs-2">
+            <a href="/lxwm">
+                <img src="{% static 'img/lx.png'%}">
+                <h6>联系</h6>
+            </a></div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/headfoot.js' %}"></script>
+    <script>
+<!--    popoverjs-->
+
+
+
+$('.li_m').click(function(){
+    $('#title_img').attr('src',$(this).attr('src')) ;
+});
+
+
+$(
+	function(){
+		var qiyeweixin ='<img src="{% static 'img/vx_qy.png'%}">'
+		var jishuwenxi ='<img src="{% static 'img/vx_qy.png'%}">'
+		var xiaoshouweixin ='<img src="{% static 'img/vx_qy.png'%}">'
+		$('#right_weixin_qiye').popover({
+			html:true,
+			content:qiyeweixin,
+		});
+		$('#right_qq').popover({
+			html:true,
+
+		});
+		$('#right_weixin_xiaoshou').popover({
+			html:true,
+			content:xiaoshouweixin,
+		});
+		$('#right_weixin_jishu').popover({
+			html:true,
+			content:jishuwenxi,
+		});
+		$('#nav_top_js').popover({
+			html:true,
+			content:jishuwenxi,
+		});
+	  }
+    )
+<!--  数值自增函数-->
+ function NumAutoPlusAnimation(targetEle, options) {
+ /*可以自己改造下传入的参数，按照自己的需求和喜好封装该函数*/
+ //不传配置就把它绑定在相应html元素的data-xxxx属性上吧
+ options = options || {};
+
+ var $this = document.getElementById(targetEle),
+  time = options.time || $this.data('time'), //总时间--毫秒为单位
+  finalNum = options.num || $this.data('value'), //要显示的真实数值
+  regulator = options.regulator || 100, //调速器，改变regulator的数值可以调节数字改变的速度
+
+  step = finalNum / (time / regulator),/*每30ms增加的数值--*/
+  count = 0, //计数器
+  initial = 0;
+
+ var timer = setInterval(function() {
+
+  count = count + step;
+
+  if(count >= finalNum) {
+   clearInterval(timer);
+   count = finalNum;
+  }
+  //t未发生改变的话就直接返回
+  //避免调用text函数，提高DOM性能
+  var t = Math.floor(count);
+  if(t == initial) return;
+
+  initial = '<strong>'+t+'</strong>';
+
+  $this.innerHTML = initial;
+ }, 30);
+} ;
+window.addEventListener('scroll',winScroll);
+function winScroll(e){
+  if(document.documentElement.scrollTop == 200 | document.body.scrollTop ==200) {
+
+  }
+};
+
+<!--仅执行一次-->
+var flage =true;
+
+window.onmousewheel = function(event) {
+
+  event = event || window.event;
+  var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+<!--   企业年份 -->
+   if(scrollTop >= 150) {
+        if(flage) {
+                NumAutoPlusAnimation("year_a", {
+				time: 1000,
+				num: 23,
+				regulator: 20
+			})
+			NumAutoPlusAnimation("gys", {
+				time: 2000,
+				num: 1000,
+				regulator: 50
+			})
+<!--			生成线-->
+			 NumAutoPlusAnimation("create_a", {
+				time: 1000,
+				num: 23,
+				regulator: 20
+			})
+			NumAutoPlusAnimation("ncl_a", {
+				time: 2000,
+				num: 500000,
+				regulator: 50
+			})
+			flage = false;
+        }
+
+
+    }
+
+
+};
+
+</script>
+</body>
+</html>

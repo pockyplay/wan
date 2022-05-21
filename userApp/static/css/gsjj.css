@@ -1,0 +1,51 @@
+.nav_fh:hover:after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: #1960ae;
+    top: 40px;
+    left: 15px;
+    position: absolute;
+}
+
+
+.position {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 40px;
+    font-size: 16px;
+    height:40px;
+}
+
+.col-md-6{
+        overflow: hidden;
+        position: relative;
+}
+
+.col-md-6 img {
+    width:500px;
+}
+
+
+@media (max-width: 768px) {
+
+    .col-xs-12{
+        width:415px;
+        overflow: hidden;
+        position: relative;
+    }
+    .col-xs-12{
+           padding-left: 0px;
+            padding-right: 0px;
+
+    }
+    .col-xs-12 img{
+        width:415px;
+    }
+
+}
+

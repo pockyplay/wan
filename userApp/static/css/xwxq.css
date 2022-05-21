@@ -1,0 +1,39 @@
+.position {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 40px;
+    font-size: 16px;
+    height:40px;
+}
+
+.position img {
+    vertical-align:text-bottom;
+}
+.position div div div a {
+    color:#fff;
+}
+.div_img img {
+    width:1100px;
+}
+
+
+
+
+    @media (max-width: 768px) {
+
+
+
+     .div_img{
+        width:400px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .div_img img{
+        width:400px;
+    }
+
+}

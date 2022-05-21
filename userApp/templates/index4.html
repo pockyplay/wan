@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>浙江椿树整流器有限公司</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+
+
+</head>
+<body style="padding-top: 70px;">
+<!--导航栏-->
+<nav class="navbar navbar-default text-center navbar-fixed-top " role="navigation">
+	<div class="container" style="padding-left: 0px;padding-right: 0px;padding-top: 8px">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">首页</a>
+	</div>
+	<div class="collapse navbar-collapse" id="example-navbar-collapse">
+		<ul class="nav navbar-nav navbar-left">
+			<li><a href="#">公司简介</a></li>
+			<li><a href="#">产品中心</a></li>
+			<li><a href="#">资质证照</a></li>
+			<li><a href="#">生产车间</a></li>
+			<li><a href="#">技术支持</a></li>
+			<li><a href="#">资讯动态</a></li>
+			<li><a href="#">联系我们</a></li>
+		</ul>
+<!--        设置按钮-->
+<!--        <ul class="nav navbar-nav navbar-right">-->
+
+<!--			<li class="dropdown">-->
+<!--				<a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">-->
+<!--					设置 <b style="top: 2px;" class="glyphicon glyphicon-cog"></b>-->
+<!--				</a>-->
+<!--				<ul class="dropdown-menu">-->
+<!--					<li><a href="#">jmeter</a></li>-->
+<!--					<li><a href="#">EJB</a></li>-->
+<!--					<li><a href="#">Jasper Report</a></li>-->
+<!--					<li class="divider"></li>-->
+<!--					<li><a href="#">分离的链接</a></li>-->
+<!--					<li class="divider"></li>-->
+<!--					<li><a href="#">另一个分离的链接</a></li>-->
+<!--				</ul>-->
+<!--			</li>-->
+<!--		</ul>-->
+        <div class="">
+<!--            搜索框-->
+        <form class="navbar-form " role="form" style="padding-right: 0px;padding-left: 0px;">
+        <div class="row">
+            <div class="col-md-5" style="padding-right: 0px;padding-left: 0px;">
+                <div class="input-group navbar-right">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn ">
+                        <a  type="submit" class="btn btn-default" >搜索</a>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </form>
+</div>
+
+	</div>
+	</div>
+</nav>
+<!--    <div class="container-fluid min_heard  " style="height:40px;background:#00a1d6;" >-->
+<!--        <div class="container">-->
+<!--            <div class="row top_bar">-->
+<!--                <div class="col-md-9 ">-->
+<!--                    <a href="#">首页</a>-->
+<!--                    <a>|</a>-->
+<!--                    <a href="#">公司简介</a>-->
+<!--                    <a>|</a>-->
+<!--                    <a href="#">产品中心</a>-->
+<!--                    <a>|</a>-->
+<!--                    <a href="#">资质证照</a>-->
+<!--                    <a>|</a>-->
+<!--                    <a href="#">生产车间</a>-->
+<!--                    <a>|</a>-->
+<!--                    <a href="#">技术支持</a>-->
+<!--                    <a>|</a>-->
+<!--                    <a href="#">资讯动态</a>-->
+<!--                    <a>|</a>-->
+<!--                    <a href="#">联系我们</a>-->
+
+
+<!--                </div>-->
+<!--                <div class="col-md-2 col-md-offset-1 text-center">-->
+<!--                    <a href="#">消息通知</a>-->
+<!--                    <div class="btn-group ">-->
+<!--	                <a class=" dropdown-toggle" data-toggle="dropdown" id="tsss" href="#" >语言-->
+<!--                        <span id="span_a" class="glyphicon glyphicon-cog text-center"></span></a>-->
+
+
+<!--	<ul class="anoxia dropdown-menu" role="menu" id="zzzz"  style="background-color : #00a1d6">-->
+<!--		<li><a href="#" style="line-height:20px;margin-left: 0px;width:100%;">功能</a></li>-->
+<!--		<li><a href="#" style="line-height:20px;margin-left: 0px;width:100%;">另一个功能</a></li>-->
+<!--		<li><a href="#" style="line-height:20px;margin-left: 0px;width:100%;">其他</a></li>-->
+<!--		<li class="divider" style="line-height:20px;margin-left: 0px;width:100%;"></li>-->
+<!--		<li><a href="#"  style="line-height:20px;margin-left: 0px;width:100%;">分离的链接</a></li>-->
+<!--	</ul>-->
+<!--</div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+
+
+<div class="container" >
+    <div class="row content_div">
+<!--        bg-primarys-->
+        <div class="col-md-3  text-white">
+           <div><img src="{% static 'img/chunz.png' %}"></div>
+        </div>
+
+        <div class="col-md-6 bg-dark text-black ">
+            <div>
+                <ul class="list-unstyled list-inline">
+                    <li><a href="#"><span>模块</span></a></li>
+                    <li><a href="#"><span>模块</span></a></li>
+                    <li><a href="#"><span>模块</span></a></li>
+                    <li><a href="#"><span>模块</span></a></li>
+                    <li><a href="#"><span>模块</span></a></li>
+                </ul>
+            </div>
+        </div>
+<!--        咨询热线-->
+        <div class="col-md-3 text-white text-right" style="font-size: 20px;padding-right: 0px;padding-left: 0px;">
+           <a href="#"> 咨询热线:</a>
+            <a href="#">0577-27836888</a>
+        </div>
+    </div>
+</div>
+<!--轮播-->
+
+
+
+
+<div class="container" style="height:450px;">
+   <div class="row" >
+<!-- <div class="list-group col-md-2 text-center" >-->
+<!--	<a href="#" class="list-group-item" style="background: #f8f8f8;">-->
+<!--		<h4 >产品导航栏</h4>-->
+
+
+<!--	</a>-->
+<!--	<a href="#" class="list-group-item">-->
+<!--		<h5>-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+<!--    <a href="#" class="list-group-item">-->
+<!--		<h5 >-->
+<!--			硅整流模块<span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--		</h5>-->
+<!--	</a>-->
+
+<!--</div>-->
+
+
+    <div id="myCarousel" class="carousel slide col-md-10" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{% static 'img/11111.png'%}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/11111.png'%}" alt="">
+            </div>
+            <div class="item">
+                <img src="{% static 'img/11111.png'%}" alt="">
+            </div>
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+   </div>
+</div>
+
+<div class="container text-center" style="height:100px;background:#f8f8f8;margin-top:
+33px;">
+        <div class="row">
+            <div class="col-md-12 text-center" style="line-height:100px">
+                <ul class="list-unstyled list-inline">
+                    <li>
+                        <a href="#" >
+                            资料下载
+                        </a>
+                    <li>
+                        <a href="#" >
+                            产品检索
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            技术支持
+                        </a>
+                    <li>
+                        <a href="#" >
+                            售后服务
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            已经反馈
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+<div class="container text-center" style="height:100px;background:#f8f8f8;margin-top:
+33px;">
+        <div class="row">
+            <div class="col-md-12 text-center" style="line-height:100px">
+                <ul class="list-unstyled list-inline">
+                    <li>
+                        <a href="#" >
+                            资料下载
+                        </a>
+                    <li>
+                        <a href="#" >
+                            产品检索
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            技术支持
+                        </a>
+                    <li>
+                        <a href="#" >
+                            售后服务
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            已经反馈
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+<!--公司简介-->
+
+
+
+
+        <div class="container jianjie" style="background:#f6f6f6;margin-top: 40px;">
+            <div class="row">
+                <div class="col-md-12" style="padding-top:20px;margin: 0px;">
+                    <p class="text-center text-primary " style="font-size: 34px;"><strong>浙江椿树整流桥有限公司</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted text-center hy">半导体行业的先驱者</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="padding-right: 0px;padding-left: 15px;">
+                    <div ><img src="{% static 'img/img_1.png'%}" style="height:400px;width:600px;"></div>
+                </div>
+                <div class="col-md-6" style="margin-left:-8px;">
+                <!--             网格嵌套       -->
+                    <div class="container" >
+                        <div class="row" style="margin-top: 20px;">
+                                <div class="col-md-2 text-center">
+                                    <div>
+                                        <a id="year_a" class="text-primary" style="font-size: 30px;"><strong>23</strong></a>
+                                        <a class="text-muted">年</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">半导体生产经验</a>
+                                    </div>
+
+                                </div>
+                            <div class="col-md-2 text-center" >
+                                    <div>
+                                        <a id="create_a" class="text-primary" style="font-size: 30px;"><strong>23</strong></a>
+                                        <a class="text-muted">条</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">半自动生产线</a>
+                                    </div>
+
+                                </div>
+                            <div class="col-md-2 text-center">
+                                    <div>
+                                        <a id="ncl_a" class="text-primary" style="font-size: 30px;"><strong>5000000</strong></a>
+                                        <a class="text-muted">件</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">年度产量</a>
+                                    </div>
+
+                                </div>
+
+                        </div>
+                        <!-- 第二行                       -->
+                        <div class="row" style="margin-top: 40px;">
+                                <div class="col-md-2 text-center">
+                                    <div>
+                                        <a class="text-primary" style="font-size: 30px;"><strong>23</strong></a>
+                                        <a class="text-muted">年</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">半导体生产经验</a>
+                                    </div>
+
+                                </div>
+                            <div class="col-md-2 text-center" >
+                                    <div>
+                                        <a class="text-primary" style="font-size: 30px;"><strong>23</strong></a>
+                                        <a class="text-muted">条</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">半自动生产线</a>
+                                    </div>
+
+                                </div>
+                            <div class="col-md-2 text-center">
+                                    <div>
+                                        <a class="text-primary" style="font-size: 30px;"><strong>5000000</strong></a>
+                                        <a class="text-muted">件</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">年度产量</a>
+                                    </div>
+
+                              </div>
+
+                        </div>
+                        <!-- 第三行                       -->
+                        <div class="row" style="margin-top: 40px;">
+                                <div class="col-md-2 text-center">
+                                    <div>
+                                        <a class="text-primary" style="font-size: 30px;"><strong>23</strong></a>
+                                        <a class="text-muted">年</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">半导体生产经验</a>
+                                    </div>
+
+                                </div>
+                            <div class="col-md-2 text-center" >
+                                    <div>
+                                        <a class="text-primary" style="font-size: 30px;"><strong>23</strong></a>
+                                        <a class="text-muted">条</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">半自动生产线</a>
+                                    </div>
+
+                                </div>
+                            <div class="col-md-2 text-center">
+                                    <div>
+                                        <a class="text-primary" style="font-size: 30px;"><strong>5000000</strong></a>
+                                        <a class="text-muted">件</a>
+                                    </div>
+                                    <div>
+                                        <a class="text-muted">年度产量</a>
+                                    </div>
+
+                                </div>
+
+                        </div>
+                        <!-- 第四行                       -->
+                        <div class="row" style="margin-top: 60px;">
+                                <div class="col-md-8 text-center">
+
+                                    <a type="button" class="btn btn-primary btn-lg" style="text-shadow: black 5px 3px 3px;">
+                                        查看更多 <span class="glyphicon glyphicon-hand-up"></span></a>
+                                    <a type="button" class="btn btn-primary btn-lg" style="text-shadow: black 5px 3px 3px;margin-left: 26px;">
+                                        企业视频 <span class="glyphicon glyphicon-facetime-video"></span></a>
+
+                                </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"  style="margin-top: 33px;">
+                    <div >
+                        <p class="lead" style="text-indent:50px;">
+                            作为国内专业的电力半导体器件生产企业，上整自成立之初就秉承以产品质量为根本，以市场需求为导向，以客户创造价值为己任的精神，
+                            致力为全球客户提供高品质的电力半导体产品。经多年创新拼搏，现已发展成为集科研、开发、销售为一体的跨区域、多元化综合型企业，本公
+                            司生产的上整SHANGZHENG牌优质的全系列单相、三相固态继电器、单相、三相、智能交流调压器、智能调压模块。MTC、 MFC、MDC、MDS、MDQ
+                            系列电子半导体模块。KBPC、 QL、SQL桥式整流器。双向可控硅。普通整流管，快速晶闸管，高频晶闸管。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <!--服务与支持    -->
+    <div class="container-fluid text-left "  style="margin-top: 33px;background-color:#f6f6f6;
+    background: url(http://www.zj-sz.net/template/sscm/images/fwzc_bg.jpg) center top no-repeat;height:500px;padding-top:50px;">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="lead">
+                        <h1><strong>服务与支持</strong></h1>
+                        </a>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="lead text-muted">在保障产品质量的同时，致力于为客户提供尽心尽力、尽善尽美的服务</p>
+                    </div>
+                    <div class="col-md-12">
+                        <a class="lead"><h1><strong>质量技术热线：</strong></h1></a>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="lead text-muted">0577-27836888</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--foot    -->
+
+<!--news_content-->
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="lead " style="margin-bottom: 0px;"><h1 class="text-primary" style="margin-bottom: 0px;"><STRONG>NEWS</STRONG></h1></a>
+                <a class="lead "><H4  style="margin：0px;">新闻资讯</H4></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <img src="{% static 'img/img_3.png'%}">
+                <p ><a href="#">亚洲博览会</a></p>
+            </div>
+
+        </div>
+          <div class="row">
+                <div class="col-md-2 text-center">
+
+               <h4 class="text-left"><a href="#">本次于2014年10月28日至30日在上海展开的第84届中国电子节上....</a></h4>
+                </div>
+              </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background:#f6f6f6;">
+	<div class="row" style="padding-left: 0px;padding-right: 0px;">
+		<div class="container" style="padding-left: 0px;padding-right: 0px;">
+			<div class="row" style="padding-top: 30px;">
+				<div class="col-md-6 footer_lf">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="footer_title">
+									<a href="#" ><strong>公司简介</strong></a>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="footer_title">
+									<a href="#" ><strong>产品中心</strong></a>
+								</div>
+								<br>
+								<div class="footer_name">
+									<a  href="#" class="text-muted">固态继电器系列</a>
+								</div>
+								<div  class="footer_name">
+									<a href="#" class="text-muted">固态继电器系列</a>
+								</div>
+								<div class="footer_name">
+									<a href="#" class="text-muted">固态继电器系列</a>
+								</div>
+								<div class="footer_name">
+									<a  href="#" class="text-muted ">固态继电器系列</a>
+								</div>
+								<div class="footer_name">
+									<a  href="#" class="text-muted">固态继电器系列</a>
+								</div>
+
+							</div>
+							<div class="col-md-3 ">
+								<div class="footer_title">
+									<a href="#" ><strong>资格证书</strong></a>
+								</div>
+																<br>
+								<div class="footer_name">
+									<a  href="#" class="text-muted">固态继电器系列</a>
+								</div>
+								<div  class="footer_name">
+									<a href="#" class="text-muted">固态继电器系列</a>
+								</div>
+								<div class="footer_name">
+									<a href="#" class="text-muted">固态继电器系列</a>
+								</div>
+								<div class="footer_name">
+									<a  href="#" class="text-muted ">固态继电器系列</a>
+								</div>
+								<div class="footer_name">
+									<a  href="#" class="text-muted">固态继电器系列</a>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="footer_title">
+									<a href="#" ><strong>公司动态</strong></a>
+								</div>
+							</div>
+						</div>
+				</div>
+			<div class="col-md-5" style="padding-top:0px;padding-left: 20px;padding-right: 0px;">
+					<div class="row">
+                        <div class="col-md-5 text-center" >
+<!--                            微信二维码-->
+                            <img src="{% static 'img/img_3.png'%}"/>
+                            <p class="lead" style="font-size:18px;"><a class="text-muted">扫码关注企业微信</a></p>
+                        </div>
+
+                        <div class="col-md-7">
+                           <p class="lead"><strong>全国销售热线：</strong></p>
+                           <p class="lead">0577-27836888</p>
+                           <p class="lead">地址：浙江省温州市乐清市柳市镇张瞿村</p>
+                           <p class="lead">邮箱：<a class="text-muted" href="mailto:#">248507207@qq.com</a></p>
+                           <p class="lead">QQ：<a class="text-muted" href="http://wpa.qq.com/msgrd?v=3&amp;uin=248507207&amp;site=qq&amp;menu=yes" target="_blank">248507207</a></p>
+
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="container-fluid text-center" style="height:40px;background-color:#333333">
+
+            <a href="#" style="line-height: 40px;color:#fff">
+                Copyright© 2014 版权所有：浙江上整整流器有限公司 备案号：沪ICP备05035961号-1
+            </a>
+
+</div>
+<!--右侧导航栏-->
+<div class=" right_nav text-center "  style="height:40px;width:100px;float:right;">
+    <ul class="nav nav-tabs  nav-stacked">
+    <li class="active" style="border-bottom: 1px solid #dddddd;"><a href="#">CHUNZ</a></li>
+    <li style="border-bottom: 1px solid #dddddd;">
+                   <a  id="right_weixin_qiye"   data-trigger="hover"
+                data-container="body" data-toggle="popover" data-placement="left">
+                企业微信
+            </a>
+
+        </li>
+    <li style="border-bottom: 1px solid #dddddd;">
+        <a  id="right_qq"   data-trigger="hover"
+                data-container="body" data-toggle="popover" data-placement="left" data-content="1289551247">
+                企业QQ
+            </a>
+    </li>
+    <li style="border-bottom: 1px solid #dddddd;">
+                <a  id="right_weixin_xiaoshou"   data-trigger="hover"
+                data-container="body" data-toggle="popover" data-placement="left" >
+                销售微信
+                </a>
+    </li>
+    <li style="border-bottom: 1px solid #dddddd;">
+        <a  id="right_weixin_jishu"   data-trigger="hover"
+            data-container="body" data-toggle="popover" data-placement="left" >
+            销售微信
+        </a>
+    </li>
+    <li><a href="#" onclick="topFunction()">
+        TOP <span class="glyphicon glyphicon-chevron-up"></span>
+    </a></li>
+</ul>
+
+</div>
+
+
+
+
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script>
+<!--    popoverjs-->
+<!--返回顶部函数-->
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+$(document).ready(function(){
+  $("#tsss").mouseenter(function(){
+    $("#zzzz").fadeIn(500);
+  });
+});
+<!--返回顶部js-->
+$(document).ready(function(){
+  $("#tsss").mouseleave(function(){
+    $("#zzzz").fadeOut(500);
+  });
+});
+
+
+$(
+	function(){
+		var qiyeweixin ='<img src="{% static 'img/img_3.png'%}">'
+		var jishuwenxi ='<img src="{% static 'img/img_3.png'%}">'
+		var xiaoshouweixin ='<img src="{% static 'img/img_3.png'%}">'
+		$('#right_weixin_qiye').popover({
+			html:true,
+			content:qiyeweixin,
+		});
+		$('#right_qq').popover({
+			html:true,
+
+		});
+		$('#right_weixin_xiaoshou').popover({
+			html:true,
+			content:xiaoshouweixin,
+		});
+		$('#right_weixin_jishu').popover({
+			html:true,
+			content:jishuwenxi,
+		});
+	  }
+    )
+<!--  数值自增函数-->
+ function NumAutoPlusAnimation(targetEle, options) {
+ /*可以自己改造下传入的参数，按照自己的需求和喜好封装该函数*/
+ //不传配置就把它绑定在相应html元素的data-xxxx属性上吧
+ options = options || {};
+
+ var $this = document.getElementById(targetEle),
+  time = options.time || $this.data('time'), //总时间--毫秒为单位
+  finalNum = options.num || $this.data('value'), //要显示的真实数值
+  regulator = options.regulator || 100, //调速器，改变regulator的数值可以调节数字改变的速度
+
+  step = finalNum / (time / regulator),/*每30ms增加的数值--*/
+  count = 0, //计数器
+  initial = 0;
+
+ var timer = setInterval(function() {
+
+  count = count + step;
+
+  if(count >= finalNum) {
+   clearInterval(timer);
+   count = finalNum;
+  }
+  //t未发生改变的话就直接返回
+  //避免调用text函数，提高DOM性能
+  var t = Math.floor(count);
+  if(t == initial) return;
+
+  initial = t;
+
+  $this.innerHTML = initial;
+ }, 30);
+} ;
+window.addEventListener('scroll',winScroll);
+function winScroll(e){
+  if(document.documentElement.scrollTop == 200 | document.body.scrollTop ==200) {
+
+  }
+};
+
+<!--仅执行一次-->
+var flage =true;
+
+window.onmousewheel = function(event) {
+
+  event = event || window.event;
+  var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+<!--   企业年份 -->
+   if(scrollTop >= 150) {
+        if(flage) {
+                NumAutoPlusAnimation("year_a", {
+				time: 1000,
+				num: 23,
+				regulator: 20
+			})
+<!--			生成线-->
+			 NumAutoPlusAnimation("create_a", {
+				time: 1000,
+				num: 23,
+				regulator: 20
+			})
+			NumAutoPlusAnimation("ncl_a", {
+				time: 2000,
+				num: 500000,
+				regulator: 50
+			})
+			flage = false;
+        }
+
+
+    }
+
+
+};
+
+</script>
+</body>
+</html>

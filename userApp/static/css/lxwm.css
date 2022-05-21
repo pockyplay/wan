@@ -1,0 +1,36 @@
+.position {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 40px;
+    font-size: 16px;
+    height:40px;
+}
+
+.position img {
+    vertical-align:text-bottom;
+}
+.position div div div a {
+    color:#fff;
+}
+
+.container .text-center .col-md-4 {
+    padding:20px;
+}
+
+.ditu_div embed {
+        width:600px; height:520px;
+}
+
+@media (max-width: 768px) {
+
+     .ditu_div embed {
+        width:410px; height:500px;
+      }
+     .ditu_div{
+        padding:0px;
+     }
+
+}

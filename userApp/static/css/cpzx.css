@@ -1,0 +1,77 @@
+.position {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 40px;
+    font-size: 16px;
+    height:40px;
+}
+
+.position img {
+    vertical-align:text-bottom;
+}
+.position div div div a {
+    color:#fff;
+}
+
+.container .text-center .col-md-4 {
+    padding:20px;
+}
+
+.my_img {
+    width:500px;
+    height:400px;
+}
+h3:after{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: #1960ae;
+    top: 50px;
+    left: 15px;
+    position: absolute;
+}
+
+
+.my_ul li  {
+    border: 1px #e5e5e5 solid;
+    background: #f9f9f9;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.pre-scrollable {
+    padding:20px;
+}
+
+.my_ul li:hover a  {
+    color:#fff;
+}
+
+.my_ul li a  {
+    color:#000;
+}
+
+.my_ul li:hover {
+    background: #337ab7;
+    border: 1px #337ab7 solid;
+}
+
+
+@media (max-width: 768px) {
+
+    .col_div{
+        width:415px;
+        overflow: hidden;
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .col_div img{
+        width:415px;
+    }
+
+}
